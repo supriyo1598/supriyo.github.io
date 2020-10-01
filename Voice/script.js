@@ -19,7 +19,7 @@ console.log("Voice Activated");
 
 recognition.onresult=function (event){
   const current=event.resultIndex;
-  console.log(event);
+  
   const transcript = event.results[current][0].transcript;  
   say(transcript);
 };
